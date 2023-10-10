@@ -14,6 +14,16 @@ I will most likely not accept feature PRs. Bug fixes are welcome!
 
 Use `deno lint` and `deno fmt` for code styling.
 
+### Installing
+
+Import from GitHub:
+
+```js
+import * as color from "https://github.com/apacheli/std/raw/master/lib/color.js";
+
+console.log(color.rgb(0xff0000));
+```
+
 ### Modules
 
 - [`color`](lib/color.js)
@@ -24,19 +34,19 @@ Use `deno lint` and `deno fmt` for code styling.
   - `color.hlsToRgb(h, l, s)`
   - `color.rgbToHsv(r, g, b)`
   - `color.hsvToRgb(h, s, v)`
-- [event_dispatcher](lib/event_dispatcher.js)
+- [`event_dispatcher`](lib/event_dispatcher.js)
   - `EventDispatcher`
     - `EventDispatcher.listen(event, listener)`
     - `EventDispatcher.deafen(event, listener)`
     - `EventDispatcher.dispatch(event, ...args)`
     - `EventDispatcher.receive(event)`
-    - `EventDispatcher.stream()`
-    - `EventDispatcher.listening()`
-- [fs](lib/fs.js)
+    - `EventDispatcher.stream(event)`
+    - `EventDispatcher.listening(event)`
+- [`fs`](lib/fs.js)
   - `fs.readDirRecursive(path)`
   - `fs.write(path, data, options)`
   - `fs.writeText(path, data, options)`
-- [random](lib/random.js)
+- [`random`](lib/random.js)
   - `random.choice(list)`
   - `random.rng(max, min)`
   - `random.shuffle(list)`
@@ -44,5 +54,6 @@ Use `deno lint` and `deno fmt` for code styling.
 
 ### Licenses
 
-- [Apache License](LICENSE.txt)
+This project is licensed under [the Apache License](LICENSE.txt).
+
 - [Python License](https://github.com/python/cpython/blob/main/LICENSE)
