@@ -51,6 +51,8 @@ console.log(color.rgb(0xff0000));
   - `random.rng(max, min)`
   - `random.shuffle(list)`
   - `random.shuffleSattolo(list)`
+- [`time`](lib/time.js)
+  - `time.sleep(delay)`
 
 ### Licenses
 
