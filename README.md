@@ -8,6 +8,8 @@ Browser-compatible modules will include the following comment at the top:
 // This module is browser-compatible.
 ```
 
+> [!NOTE] This software is experimental.
+
 ### Development
 
 I will most likely not accept feature PRs. Bug fixes are welcome!
@@ -26,9 +28,9 @@ console.log(color.rgb(0xff0000));
 
 ### Modules
 
-- [`cli_parser`](lib/cli_parser.js)
-  - `parse(s)`
-  - `parseArgs(list)`
+- [`args_parser`](lib/args_parser.js)
+  - `args_parser.parse(s)`
+  - `args_parser.parseArgs(list)`
 - [`color`](lib/color.js)
   - `color.rgb(n)`
   - `color.rgbToCmyk(r, g, b)`
