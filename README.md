@@ -26,6 +26,9 @@ console.log(color.rgb(0xff0000));
 
 ### Modules
 
+- [`cli_parser`](lib/cli_parser.js)
+  - `parse(s)`
+  - `parseArgs(list)`
 - [`color`](lib/color.js)
   - `color.rgb(n)`
   - `color.rgbToCmyk(r, g, b)`
